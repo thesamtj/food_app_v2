@@ -26,7 +26,7 @@ class _FooderlichState extends State<Fooderlich> {
   // TODO: Create AppStateManager
   final _appStateManager = AppStateManager();
   // TODO: Define AppRouter
-
+  late AppRouter _appRouter;
   // TODO: Initialize app router
 
   @override
