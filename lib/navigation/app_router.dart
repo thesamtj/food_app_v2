@@ -49,6 +49,7 @@ class AppRouter extends RouterDelegate
       // 9
       pages: [
         // TODO: Add SplashScreen
+        if (!appStateManager.isInitialized) SplashScreen.page(),
         // TODO: Add LoginScreen
         // TODO: Add OnboardingScreen
         // TODO: Add Home
