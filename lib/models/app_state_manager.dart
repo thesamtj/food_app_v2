@@ -51,7 +51,12 @@ class AppStateManager extends ChangeNotifier {
     _onboardingComplete = true;
     notifyListeners();
   }
+
 // TODO: Add goToTab
+  void goToTab(index) {
+    _selectedTab = index;
+    notifyListeners();
+  }
 // TODO: Add goToRecipes
 // TODO: Add logout
 }
