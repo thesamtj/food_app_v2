@@ -91,6 +91,7 @@ class AppRouter extends RouterDelegate
         if (profileManager.didSelectUser)
           ProfileScreen.page(profileManager.getUser),
         // TODO: Add WebView Screen
+        if (profileManager.didTapOnRaywenderlich) WebViewScreen.page(),
       ],
     );
   }
