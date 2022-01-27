@@ -45,7 +45,12 @@ class AppStateManager extends ChangeNotifier {
     // 11
     notifyListeners();
   }
+
 // TODO: Add completeOnboarding
+  void completeOnboarding() {
+    _onboardingComplete = true;
+    notifyListeners();
+  }
 // TODO: Add goToTab
 // TODO: Add goToRecipes
 // TODO: Add logout
