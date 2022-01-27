@@ -88,6 +88,8 @@ class AppRouter extends RouterDelegate
                 // 4 No create
               }),
         // TODO: Add Profile Screen
+        if (profileManager.didSelectUser)
+          ProfileScreen.page(profileManager.getUser),
         // TODO: Add WebView Screen
       ],
     );
