@@ -27,7 +27,17 @@ class _FooderlichState extends State<Fooderlich> {
   final _appStateManager = AppStateManager();
   // TODO: Define AppRouter
   late AppRouter _appRouter;
+
   // TODO: Initialize app router
+  @override
+  void initState() {
+    super.initState();
+    _appRouter = AppRouter(
+      appStateManager: _appStateManager,
+      groceryManager: _groceryManager,
+      profileManager: _profileManager,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
