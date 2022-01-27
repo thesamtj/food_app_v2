@@ -60,6 +60,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           child: const Text('Skip'),
           onPressed: () {
             // TODO: Onboarding -> Navigate to home
+            Provider.of<AppStateManager>(context, listen: false)
+                .completeOnboarding();
           },
         ),
       ],
