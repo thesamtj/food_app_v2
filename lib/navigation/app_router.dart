@@ -35,6 +35,7 @@ class AppRouter extends RouterDelegate
       // 8
       key: navigatorKey,
       // TODO: Add onPopPage
+      onPopPage: _handlePopPage,
       // 9
       pages: [
         // TODO: Add SplashScreen
