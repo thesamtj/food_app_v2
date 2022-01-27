@@ -23,6 +23,7 @@ class _FooderlichState extends State<Fooderlich> {
   final _groceryManager = GroceryManager();
   final _profileManager = ProfileManager();
   // TODO: Create AppStateManager
+  final _appStateManager = AppStateManager();
   // TODO: Define AppRouter
 
   // TODO: Initialize app router

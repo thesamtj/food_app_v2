@@ -63,5 +63,18 @@ class AppStateManager extends ChangeNotifier {
     _selectedTab = FooderlichTab.recipes;
     notifyListeners();
   }
+
 // TODO: Add logout
+  void logout() {
+    // 12
+    _loggedIn = false;
+    _onboardingComplete = false;
+    _initialized = false;
+    _selectedTab = 0;
+
+    // 13
+    initializeApp();
+    // 14
+    notifyListeners();
+  }
 }
