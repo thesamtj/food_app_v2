@@ -58,6 +58,8 @@ class _HomeState extends State<Home> {
             currentIndex: widget.currentTab,
             onTap: (index) {
               // TODO: Update user's selected tab
+              Provider.of<AppStateManager>(context, listen: false)
+                  .goToTab(index);
             },
             items: <BottomNavigationBarItem>[
               const BottomNavigationBarItem(
