@@ -5,7 +5,7 @@ import '../components/circle_image.dart';
 import '../models/models.dart';
 
 class ProfileScreen extends StatefulWidget {
-  // TODO: ProfileScreen MaterialPage Helper
+  
   static MaterialPage page(User user) {
     return MaterialPage(
       name: FooderlichPages.profilePath,
